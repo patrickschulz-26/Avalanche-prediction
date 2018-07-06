@@ -21,15 +21,14 @@ print('')
 print('This application takes a square region along with weather data and finds the probability of an avalanche occurring in that region.')
 print('')
 print('Please enter the following information:')
-#minX = float(input('min longitude:'))
-#maxX = float(input('max longitude:'))
-#minY = float(input('min latitude:'))
-#maxY = float(input('max latitude:'))
-#name = input('Name this area:')
-name = 'Park city'
+minX = float(input('min longitude:'))
+maxX = float(input('max longitude:'))
+minY = float(input('min latitude:'))
+maxY = float(input('max latitude:'))
+name = input('Name this area:')
 def getTif(minX,maxX,minY,maxY,fname):
     
-    #print(int(round(maxX - minX, 2)), int(round(maxY - minY, 2)))
+    
     
     if minX > maxX or minY > maxY:
         print('')
